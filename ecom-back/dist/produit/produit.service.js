@@ -1,0 +1,32 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ProduitService = void 0;
+const common_1 = require("@nestjs/common");
+let ProduitService = class ProduitService {
+    create(createProduitDto) {
+        return 'This action adds a new produit';
+    }
+    findAll() {
+        return `This action returns all produit`;
+    }
+    findOne(id) {
+        return `This action returns a #${id} produit`;
+    }
+    update(id, updateProduitDto) {
+        return `This action updates a #${id} produit`;
+    }
+    remove(id) {
+        return `This action removes a #${id} produit`;
+    }
+};
+ProduitService = __decorate([
+    (0, common_1.Injectable)()
+], ProduitService);
+exports.ProduitService = ProduitService;
+//# sourceMappingURL=produit.service.js.map
